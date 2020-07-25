@@ -1,0 +1,36 @@
+Conceitos de GUI (Graphic User Interface)
+Uma GUI aborda muitos conceitos, dos quais os mais comuns são:
+
+Container – É uma analogia a um container físico e tem como objetivo organizar e guardar objetos. Da mesma forma este conceito serve para um container em interface. Nesse caso, os objetos que estamos armazenando são os widgets;
+Widget – É um componente qualquer na tela, que pode ser um botão, um ícone, uma caixa de texto, etc.;
+Event Handler – São tratadores de eventos. Por exemplo, ao clicarmos em um botão para executar uma ação, uma rotina é executada. Essa rotina é chamada de event handler;
+Event Loop – O event loop verifica constantemente se outro evento foi acionado. Caso a hipótese seja verdadeira, ele irá executar a rotina correspondente.
+
+Vamos entender o código: primeiro importamos todos os componentes do módulo Tkinter. Logo após, criamos uma classe chamada Application, que no momento ainda não possui nenhuma informação. É nela que criaremos os controles que serão exibidos na tela.
+
+Depois instanciamos a classe TK() através da variável root, que foi criada no final do código. Essa classe permite que os widgets possam ser utilizados na aplicação.
+
+Em Application(root) passamos a variável root como parâmetro do método construtor da classe Application. E para finaliza
+
+Sempre que um container for criado dentro de outro, devemos, no momento de sua criação, definir qual é o container pai. A mesma questão de hierarquia serve para a criação de widgets, devendo ser definido na sua criação qual o container pai, ou seja, em que container ele será incluído.
+
+Logo após definirmos a hierarquia de containeres e widgets, podemos posicionar os elementos na tela, indicando a posição em que o elemento irá aparecer.
+
+O módulo Tkinter oferece três formas de trabalharmos com geometria e posicionamento:
+
+Pack;
+Grid;
+Place.
+
+Width – Largura do widget;
+Height – Altura do widget;
+Text – Texto a ser exibido no widget;
+Font – Família da fonte do texto;
+Fg – Cor do texto do widget;
+Bg – Cor de fundo do widget;
+Side – Define em que lado o widget se posicionará (Left, Right, Top, Bottom).
+Por padrão, o side vem definido como Top, então vamos usá-lo para ver o que acontece.
+
+Os event handlers são ações que executadas como resposta a determinado evento. Sempre que um evento ocorre, o event loop o interpreta como uma string. Por exemplo, ao clicar com o botão esquerdo do mouse, o event loop interpreta esta ação pela string "": o botão ENTER é representado pela string "" e o botão direito do mouse pela string "".
+
+Vamos começar a usar esses conceitos. Para adicionar um evento de clique devemos primeiro criar o método event handler e fazer o binding no botão, conforme mostra a Listagem 5.
