@@ -10,7 +10,7 @@ Em Application(root) passamos a variável root como parâmetro do método constr
 '''
 class Application:
     def __init__(self, master=None):
-        pass
+        passgfdd
 root = Tk()
 Application(root)
 root.mainloop()
