@@ -3,7 +3,7 @@ from tkinter import *
 class Application:
     def __init__(self, master=None):
         #define o primeira container e o padrao de escrita
-        self.fontePadrao = ("Arial", "10")
+        self.fontePadrao = ("Arial", "10")vcbbvcc
         self.primeiroContainer = Frame(master)
         self.primeiroContainer["pady"] = 10
         self.primeiroContainer.pack()
